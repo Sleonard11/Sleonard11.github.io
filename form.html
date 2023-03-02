@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div id="wrapper">
+
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/challenge.html">Challenge</a></li>
+                <li><a href="#">Recipe</a></li>
+                <li><a href="/form.html">Form</a></li>
+            </ul>
+        </nav>
+    
+        <header>
+            <h1>Reserve Your Room</h1>
+            <h2>Our Reservationn Policies</h2>
+        </header>
+    
+        <section class="policies">
+            <ul>
+                <li>Check-in time after 3:00pm on</li>
+                <li>Check-out time by 11:00am or charges are incurred</li>
+                <li>Breakfast and afternoon tea/snacks included in cost</li>
+                <li>Proof of COVID-19 Vaccination required. Upload image(s) below</li>
+                <li>50% deposit required at booking</li>
+                <li>Cancellations less than 72 hours ahead of check-in forfeit 50% of deposit</li>
+            </ul>
+        </section>
+    
+        <section class="reserve">
+            <form method="post" name="reservation" data-netlify="true">
+
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName"id="firstName" placeholder="first name"required>
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName"id="lastName" placeholder="last name"required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="number" name="phone" id="phone" required>
+                </div>
+
+                <div>
+                    <label for="date">Check-in Date</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+
+                <div>
+                    <label for="date">Check-out Date</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+
+                <div>
+                    <label for="number">Number of Guests</label>
+                    <input type="number" name="number" id="number" min="1" max="4" required>
+                </div>
+
+                <div>
+                    <label for="room">Room Type</label>
+                    <select>
+                       <option value="king">King</option>
+                       <option value="queen">Queen</option>
+                       <option value="twin">Twin</option>
+                       <option value="full">Full</option>  
+                    </select>
+                </div>
+
+                <div>
+                    <div>Ocean View (Addtional Cost)</div>
+                    <label for="view">Yes</label>
+                    <input type="radio" name="view" id="yes" value="yes">
+
+                    <label for="view">No</label>
+                    <input type="radio" name="view" id="no" value="no">
+                </div>
+
+                <div>
+                    <label for="notes">List of Allergies or Other Requests</label>
+                    <textarea name="notes" id="notes" cols="50" rows="3"></textarea>
+                </div>
+
+                <div>
+                    <label for="terms">I agree to all the terms listed above</label>
+                    <input type="checkbox" name="" id="" required>
+                </div>
+
+                <div>
+                    <label for="password">Create a password to return. Username is your email</label>
+                    <input type="password" name="password" required>
+                </div>
+
+                <div>
+                    <button>Submit</button>
+                </div>
+
+                <div>
+                    <button>Reset</button>
+                </div>
+
+
+
+            </form>
+        </section>
+    
+    
+    
+    
+    </div>
+
+    <footer>
+        <small>
+             &copy; 2022 The Mediocre Hotel <br>
+             Orlando, FL
+        <small>
+    
+     </footer>
+    
+</body>
+</html>

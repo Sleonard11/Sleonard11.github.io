@@ -1,0 +1,101 @@
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: #da15c970;
+}
+
+h1,
+h2,
+h3 {
+    color: rgb(240, 225, 12);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline dotted #da15c970 6px;
+    text text-underline-offset: 12px;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    text-decoration: none;
+}
+
+h2::before,
+h2::after {
+    content: "\1F3B7 ";
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+nav li {
+    font-size: 1.25rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 550;
+    letter-spacing: 1px;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+nav,
+header {
+    text-align: center;
+}
+
+nav a,
+.assignments a,
+footer a {
+    text-decoration: none;
+    color: rgb(199, 36, 36);
+}
+
+nav a:link,
+nav a:visited {
+    line-height: 1.6;
+}
+
+nav a:hover,
+nav a:active {
+    text-decoration: dashed wavy rgb(67, 204, 238) 2px;
+    text-underline-offset: 6px;
+    color: rgb(0, 0, 0);
+}
+
+nav a:hover::before {
+    content: "\1F3B7 ";
+}
+
+header p {
+    font-size: 80%;
+    text-decoration: solid;
+}
+
+.assignments li{
+    list-style-type: none;
+}
+
+.assignments li::before {
+    content: "\1F3B7 ";
+    font-size: 1.4rem;
+}
+
+.assignments a:link
+.assignments a:visited {
+    line-height: 1.4;
+}
+
+.assignments a:hover,
+.assignments a:active {
+    text-decoration: underline wavy rgb(209, 20, 58) 2px;
+    text-underline-offset: 4px;
+}
+
+footer {
+    color: rgb(121, 252, 208);
+    line-height: 75%;
+    font-weight: 550;
+}

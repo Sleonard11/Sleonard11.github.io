@@ -220,5 +220,56 @@ footer p {
 }
 
 @media (max-width: 810px) {
+    html {
+        line-height: 250%;
+    }
+
+    nav a {
+        padding: 7px;
+        letter-spacing: normal;
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        padding-left: 12px;
+    }
+
+    main {
+        width: 120%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        text-shadow: none;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    img {
+    float: none;
+    max-width: 75%;
+    margin-left: 35%;
+    }
+
+    .rate {
+        font-size: 3rem;
+    }
+
+    .details,
+    .ingredients,
+    .instructions,
+    .nutrition {
+        width: 110%;
+        float: none;
+    }
     
+    .col1,
+    .col2,
+    .col3 {
+        display: block;
+        float: none;
+        width: 105%;
+    }
 }

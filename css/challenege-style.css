@@ -1,25 +1,89 @@
+:root {
+    --font-size: 1vw;
+    --color-red: #bd114c;
+    --color-yellow: #ffb03a;
+}
+
+
+
+
+
 HTML {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: calc(var(--font-size) + 15px);
     line-height: 1.5;
 }
 
-h1, h2, h3 {
-    color: #bb1b47 ;
+h1,
+h2,
+h3 {
+    color: var(--color-red) ;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #bb1b47;
 }
 
 h1 {
-    text-transform: capitalize;
-    font-weight: 100;
-    letter-spacing: .1rem;
-    font-size: 3.5rem;
+    font-size: calc(var(--font-size) * 6);
+    background-image: linear-gradient(60deg rgb(23, 236, 204) rgb(114, 114, 114));
+    background-clip: text;
+    color: transparent;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: calc(var(--font-size) + 32px);
 }
 
 h3 {
     font-size: 1.5rem;
+}
+
+nav ul:before {
+    content: "\1f34d";
+    font-size: 5rem;
+}
+
+nav ul {
+    padding-left: 0;
+    width: calc(60% + 30px);
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    margin: 0 auto;
+}
+
+h2::before {
+    content: "\1f34d";
+    font-size: 3rem;
+}
+
+h3::before {
+    content: "\1f34d";
+    font-size: 2.5rem;
+}
+
+.signif-design li {
+    list-style-type: "\1f34d";
+    text-indent: .5rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(80% - 40px);
+    margin: 0 auto;
+}
+
+main {
+    width: calc(60% - 40px);
+    margin: 0 auto;
+}
+
+img {
+    max-width: 95%;
+}
+
+footer {
+    font-size: 18px;
+    line-height: 1.1;
 }
